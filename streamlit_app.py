@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import cv2
-import os
+#import os
 #import matplotlib.pyplot as plt
 #st.image
 #st.slider
@@ -12,10 +12,10 @@ if plik is not None:
     st.write(plik.name)
     st.warning("Ok")
 
-    scierzka = r"./"
+    #scierzka = r"./"
 #plik_2 = str(plik)
-    calosc = os.path.join(scierzka,plik.name)
-    obraz = cv2.imread(calosc)
+    #calosc = os.path.join(scierzka,plik.name)
+    obraz = cv2.imread(plik)
     obraz = cv2.cvtColor(obraz,cv2.COLOR_BGR2RGB)
     st.write(calosc)
     st.write(obraz.shape)
