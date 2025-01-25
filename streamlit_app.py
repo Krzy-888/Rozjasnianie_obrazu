@@ -1,6 +1,6 @@
 import streamlit as st
 import numpy as np
-import cv2
+import opencv-python-headless as cv2
 from PIL import Image
 import os
 #import matplotlib.pyplot as plt
